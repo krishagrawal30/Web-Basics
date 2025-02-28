@@ -1,0 +1,132 @@
+
+#head
+{
+    background: linear-gradient(antiquewhite,yellow);           ;
+    background-size: cover;
+    color: rgb(110, 0, 0);
+}
+#body
+{
+    background-image: url("bggg.jpg");
+    background-repeat: repeat;
+    margin-top: 3px;
+    margin-bottom: 35px;
+    margin-left: 35px;
+    margin-right:35px;
+}
+.center
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#div1
+{
+    background: linear-gradient(rgb(92, 8, 8),#00aeff);
+    margin-left: 53%;
+    border: 1cm;
+}
+.navbar
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: monospace;
+    font-size: 20px;
+    padding: 25px;
+    display: inline-block;
+}
+.navbar a:hover{
+    background: linear-gradient(rgb(0, 139, 0),black);
+    border-radius: 45px;
+}
+.video
+{
+    width: 70%;
+    max-width: 100%;
+    max-height: auto;
+    align-items: center;
+}
+#div2
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.txt_over
+{
+    position: absolute;
+  top: 90%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+}
+.text 
+{
+    background: rgb(0, 94, 134); 
+    padding: 10px;
+    border-radius: 10px;
+    color: rgb(255, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+}
+#about
+{
+    background: linear-gradient(rgb(120, 201, 143),aqua) ;
+    color: rgb(70, 0, 0);
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+#menu
+{
+    background: linear-gradient(rgb(0, 0, 0),rgb(255, 255, 255)) ;
+    color: rgb(225, 255, 0);
+    font-size: 2rem;
+}
+#order
+{
+    background: linear-gradient(rgb(46, 31, 0) ,rgb(255, 68, 0) );
+    color: #d6cbff;
+    font-size: 3rem;
+}
+.order_link 
+a{
+        text-decoration: none;
+        color: rgb(247, 255, 212);
+        background: linear-gradient(rgb(0, 59, 61),black);
+        font-family: monospace;
+        font-size: 50px;
+        margin-left: 25%;
+        padding: 25px;
+        text-align: center;
+        display: inline-block;
+        border-radius: 45px;  
+}
+a:hover{
+    background: linear-gradient(rgb(6, 184, 0),rgb(8, 0, 0));
+    border-radius: 45px;   
+}
+#contact
+{
+    background: linear-gradient(#073763 ,#21A4D9 );
+    color: #ffffff;
+    font-size: 2rem;
+}
+#order_table
+{
+    background-color: black;
+    color: gold;
+    border-radius: 10px;
+    border-color: antiquewhite;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;
+    text-align: center;
+}
+#form
+{
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: linear-gradient(brown,red);
+}

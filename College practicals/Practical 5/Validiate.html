@@ -1,0 +1,38 @@
+function validateform() {
+    var userid=document.forms["reg"]["UserID"];
+    var  password=document.forms["reg"]["Password"];
+    var name=document.forms["reg"]["Name"];
+    var email=document.forms["reg"]["Email"];
+    var zip=document.forms["reg"]["zip"];
+
+    if(userID.value.length<4 || userId.value.length>15) {
+        window.alert("UserID must be between 4 and 14 characters.");
+        userID.focus();
+        return false;
+    }
+    if (password.vlaue.length<7 || password.vlaue.length>12) {
+        window.alert("Password must be between 7 and 12 characters.");
+        password.focus();
+        return false;
+    }
+    if (name.value.trim()=="") {
+        window.alert("Name must be written.");
+        name.focus();
+        return false;
+    } else if (name.value.trim() !=="" && !/^[a-zA-Z]+$/.test(name.value.trim())) {
+        window.alert("Name must contain only alphabet.");
+        name.focus();
+        return false;
+    }
+    of (isNaN(zip.value)){
+        window.alert("ZIP code must be numeric.");
+        zip.focus();
+        return false;
+    }
+    if(!/^w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value)) {
+        window.alert("Email must be a valid email address");
+        email.focus();
+        return false;
+    }
+    return true;
+}

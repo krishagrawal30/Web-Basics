@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank account</title>
+</head>
+<img src="pnb.png" alt="error" align="left" height="150" width="450">
+<body bgcolor=" #800000" text="white">
+    <br><br><br><br><br><br><br><br><br><br>
+    <center><font size="7"><b>Online new account opening </b></font></center>
+    <hr>
+    <marquee scrollamount="15"><font size="4" color="yellow"><b>Now no need to stand in long queue to open a 
+            savings account at PNB!!!!</b></font></marquee>
+    <hr>
+    <h2 align="center"><u>Our Registered Customers</u></h2>
+    <table align="center" bgcolor="black">
+
+            <tr>
+                <th>Name</th>
+                <th>Date of Birth</th>
+                <th>Address</th>
+                <th>Account type</th>
+            </tr>
+            <tr>
+                <td>Mr. Raghav Chauhan</td>
+                <td>14-08-2000</td>
+                <td>123 , Gittikhadan square, Nagpur</td>
+                <td>Savings</td>
+            </tr>
+
+            <tr>
+                <td>Mrs. Priya Agrawal</td>
+                <td>30-06-1979</td>
+                <td>280, Rathi nagar,Dhamangaon</td>
+                <td>Current</td>
+            </tr>
+
+            <tr>
+                <td>Mrs. Shraddha Bhutada </td>
+                <td>12-09-1988</td>
+                <td>15-A,Bhagat Roasd, Pune</td>
+                <td>Savings</td>
+            </tr>
+        </table>
+    <h2><u>Customer's personal details</u></h2>
+    <h4>All fields are mandatory*</h4>
+    <form action="bank.html" method="get">
+        <table>
+            <tr>
+                <td><label for="fname">Choose account type : </label></td>
+                    <td><input type="radio" id="acc" name="acc">Current 
+                <input type="radio" id="acc" name="acc" required>Savings</td>
+            </tr> 
+        <tr>
+            <td><label for="fname">First Name: </label></td>
+            <td><input type="text" id="fname" name="fname" required></td>
+    
+            <td><label for="lname">&nbsp;&nbsp;&nbsp;&nbsp;Last Name: </label></td>
+            <td><input type="text" id="lname" name="lname" required></td>
+        </tr>    
+        
+        <tr>
+            <td><label for="fname">Gender: </label></td>
+                <td><input type="radio" id="gender" name="gender">Male 
+            <input type="radio" id="gender" name="gender" required>Female</td>
+        </tr>  
+        <tr>
+            <td><label for="number">Mobile number: </label></td>
+            <td><input type="number" id="moblie" name="Mobile" required></td>
+        
+            <td><label for="aadhar">&nbsp;&nbsp;&nbsp;&nbsp;Aadhaar number: </label></td>
+            <td><input type="number" id="aadhar" name="aadhar" required></td>
+        </tr> 
+        <tr>
+        <td><label for="pan">PAN card number: </label></td>
+        <td><input type="text" id="pan" name="pan" required></td>
+        <tr>
+            <td><label for="Date of birth">Date of Birth: </label></td>
+            <td><input type="date" id="dob" name="dob" required></td>
+        
+            <td><label for="place">&nbsp;&nbsp;&nbsp;&nbsp;Place of birth: </label></td>
+            <td><input type="text" id="place" name="place" required></td>
+        </tr>   
+        <tr>
+            <td><label for="address">Address: </label></td>
+            <td><textarea name="add" id="add" cols="30" rows="10" required></textarea></td>
+        </tr>
+        <tr>
+            <td><label for="pn">Pincode: </label></td>
+            <td><input type="number" id="pin" name="pin" required></td>
+        </tr>
+        <tr>
+            <td><label for="Email">Email: </label></td>
+            <td><input type="email" id="email" name="pin" required></td>
+        </tr>
+        <tr>
+            <td><label for="password">Create a password </label></td>
+            <td><input type="password" id="password" name="password" required></td>
+        </tr>
+        <tr>
+            <td><label for="password">Confirm your password </label></td>
+            <td><input type="password" id="password" name="password" required></td>
+        </tr>
+        <tr>
+            <td><label for="upload">Upload a compressed file <br>of Pan card : </label></td>
+            <td><input type="file" id="upload" name="upload" required></td>
+        </tr>
+        <tr>
+            <td><label for="file">Upload a compressed file<br> of Aadhar card: </label></td>
+            <td><input type="file" id="upfile" name="upfile" required></td>
+        </tr>
+    </table>
+        <br>
+        <h2><u>Declaration</u></h2>
+        <input type="checkbox" id="chk" name="chk" required>Please seed my Aadhaar/UID Number issued by UIDAI. I hereby <br>
+               &nbsp;&nbsp;&nbsp;&nbsp; give my consent to the Bank to use my Aadhaar details to authenticate me from UIDAI by using my biometrics for <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; the purpose of opening of Bank account.
+                <br><br>
+                <p><input type="checkbox" id="chk" name="chk" required>I have read all <a href="terms and conditions.pdf">Terms & Conditions</a>
+                 and I agree to follow them.</p>
+        <input type="submit" value="Proceed" id="submitbottun" name="submitbutton">
+    <input type="reset" value="Reset" id="resetbottun" name="resetbutton">
+    </form><br><hr>
+    <h2 align="center"><u>Contact:</u> </h2>
+    <center><font size="3" color="yellow"> Call Centre Toll Free No: 1800-180-2222,
+        <br> 1800-103-2222, 0120-2490000<br>
+    Email: care@pnb.co.in.</font></center>>
+
+</body>
+</html>
+

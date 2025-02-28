@@ -1,0 +1,65 @@
+.navbar
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: monospace;
+    font-size: 20px;
+    padding: 25px;
+    display: inline-block;
+}
+.navbar a:hover{
+    background: linear-gradient(rgb(255, 251, 0),rgb(255, 186, 82));
+    color: black;
+    border-radius: 45px;
+}
+#div1
+{
+    background-color: grey;
+}
+.center
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#head
+{
+    color: darkorange;
+    font-family: cursive;
+    font-style: italic;
+}
+.style
+{
+    background: linear-gradient(rgb(0, 129, 6),rgb(12, 8, 1));
+    color: antiquewhite;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    margin-right: 3%;
+    margin-top: 3%;
+    margin-left: 3%;
+}
+.div2
+{
+     background-color: rgb(255, 214, 100);
+     color: rgb(22, 0, 100);
+     border: 8px;
+     margin-right: 1%;
+     margin-top: 1%;
+     margin-left: 1%;
+}
+#shop
+{
+    background: linear-gradient(rgb(88, 0, 0),rgb(0, 217, 255));
+    color: rgb(241, 255, 113);
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    margin-right: 3%;
+    margin-top: 3%;
+    margin-left: 3%;    
+}
+#table
+{
+    background: linear-gradient(rgb(187, 255, 0),rgb(230, 251, 255));
+     color: rgb(15, 0, 0);
+     border: 8px;
+}

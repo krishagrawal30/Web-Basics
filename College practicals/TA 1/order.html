@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function clearScreen(){
+    document.getElementById("result").value="";
+}
+function display(value){
+    document.getElementById("result").value += value;
+}
+function calculate(){
+    var p = document.getElementById("result").value;
+    var q= eval(p);
+    document.getElementById("result").value= q;
+    
+}
+function show(value){
+    document.getElementById("cal").innerHTML='Your Order will be delivered soon to your Address. Pay the bill in cash after recieving.';
+}
+   </script>
+    <title>Order on KhanaKhazana</title>
+</head>
+<body>
+    <img src="ordern.jpg" alt="error" class="center" >
+    <br><br><hr><br><br>
+    <table align="center" id="order_table" border="3">
+    <tr>
+        <th> Item </th>
+        <th> Item name</th>
+        <th>Price</th>
+        <th>Add</th>
+        </tr>
+        <tr>
+            <td border="3"><img src="paneer.jpg" alt="error" height="100" width="100"></td>
+            <td>Shahi Paneer</td>
+            <td>229/-</td>
+            <td><input type="button" value="Add" onclick="display('+ 229')"></td>
+        </tr>
+        <tr>
+            <td border="3"><img src="dosa.jpg" alt="error" height="100" width="100"></td>
+            <td>Masala Dosa with Sambhar & Chutni &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>99/-</td>
+            <td><input type="button" value="Add" onclick="display('+ 99')"></td>
+        </tr>
+        <tr>
+            <td border="3"><img src="biryani.jpg" alt="error" height="100" width="100"></td>
+            <td>Shahi Biryani</td>
+            <td>129/-</td>
+            <td><input type="button" value="Add" onclick="display('+ 129')"></td>
+        </tr>
+        <tr>
+            <td border="3"><img src="fries.jpg" alt="error" height="100" width="100"></td>
+            <td>French Fries </td>
+            <td>69/-</td>
+            <td><input type="button" value="Add" onclick="display('+ 69')"></td>
+        </tr>
+        <tr>
+            <td border="3"><img src="naan.jpg" alt="error" height="100" width="100"></td>
+            <td>Tandoori Naan</td>
+            <td>40/- (for 2 pc)</td>
+            <td><input type="button" value="Add" onclick="display('+ 40')"></td>
+        </tr>
+        <tr>
+            <td border="3"><img src="pasta.jpg" alt="error" height="100" width="100"></td>
+            <td>White sauce Pasta</td>
+            <td>159/-</td>
+            <td><input type="button" value="Add" onclick="display('+ 159')"></td>
+        </tr>
+        <tr>
+            <td border="3"><img src="noodles.jpg" alt="error" height="100" width="100"></td>
+            <td>Hakka Noodles</td>
+            <td>149/-</td>
+            <td><input type="button" value="Add" onclick="display('+ 149')"></td>
+        </tr>
+        <tr>
+            <td border="3"><img src="manchurian.jpg" alt="error" height="100" width="100"></td>
+            <td>Veg Manchurian</td>
+            <td>139/-</td>
+            <td><input type="button" value="Add" onclick="display('+ 139')"></td>
+        </tr>
+        <tr>
+            <td border="3"><img src="shake.jpg" alt="error" height="100" width="100"></td>
+            <td>Oreo Shake (300 ml)</td>
+            <td>109/-</td>
+            <td><input type="button" value="Add" onclick="display('+ 109')"></td>
+        </tr>
+        <tr>
+            <td border="3"><img src="Pizza.jpg" alt="error" height="100" width="100"></td>
+            <td>Double cheese Margherita Pizza</td>
+            <td>385/-</td>
+            <td><input type="button" value="Add" onclick="display('+ 385')"></td>
+        </tr>
+        <tr>
+            <td border="3"><img src="burger.jpg" alt="error" height="100" width="100"></td>
+            <td>Burger</td>
+            <td>145/-</td>
+            <td><input type="button" value="Add" onclick="display('+ 145')"></td>
+        </tr>
+        <tr>
+            <td border="3"><img src="momos.jpg" alt="error" height="100" width="100"></td>
+            <td>Steamed Momos</td>
+            <td>89/-</td>
+            <td><input type="button" value="Add" onclick="display('+ 89')"></td>
+        </tr>
+        <tr>
+            <td border="3"><img src="pav bhaji.jpg" alt="error" height="100" width="100"></td>
+            <td>Pav Bhaji</td>
+            <td>125/-</td>
+            <td><input type="button" value="Add" onclick="display('+ 125')"></td>
+        </tr>
+        <tr>
+            <td border="3"><img src="lassi.jpg" alt="error" height="100" width="100"></td>
+            <td>Lassi (250 ml)</td>
+            <td>70/-</td>
+            <td><input type="button" value="Add" onclick="display('+ 70')"></td>
+        </tr> <tr>
+            <td border="3"><img src="sandwich.jpg" alt="error" height="100" width="100"></td>
+            <td>Veg Cheesy Grill sandwich</td>
+            <td>135/-</td>
+            <td><input type="button" value="Add" onclick="display('+ 135')"></td>
+        </tr>
+        <tr>
+            <td colspan="3"><input type="text" class="display-box" size="107" id="result" ></td>
+            <td><input type="button" value=" Clear Order " onclick="clearScreen()" id="btn"></td>
+        </tr>
+    </table>
+    <br>
+    <input type="button" value="Get your total amount" class="center" onclick="calculate()">
+    <div id="form" >
+        <h2><u>Customer's Delivery details</u></h2>
+    <h4>All fields are mandatory*</h4>
+    <form action="order.html" method="get">
+    <table align="center">
+        <tr>
+            <td><label for="fname">First Name: </label></td>
+            <td><input type="text" id="fname" name="fname" required></td>
+    
+            <td><label for="lname">&nbsp;&nbsp;&nbsp;&nbsp;Last Name: </label></td>
+            <td><input type="text" id="lname" name="lname" required></td>
+        </tr>    
+        
+        <tr>
+            <td><label for="fname">Gender: </label></td>
+                <td><input type="radio" id="gender" name="gender">Male 
+            <input type="radio" id="gender" name="gender" required>Female</td>
+        </tr>  
+        <tr>
+            <td><label for="number">Mobile number: </label></td>
+            <td><input type="number" id="moblie" name="Mobile" required></td>
+            <tr>
+                <td><label for="address">Address: </label></td>
+                <td><textarea name="add" id="add" cols="30" rows="10" required></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="pn">Pincode: </label></td>
+                <td><input type="number" id="pin" name="pin" required></td>
+            </tr>
+            <tr>
+                <td><label for="Email">Email: </label></td>
+                <td><input type="email" id="email" name="pin" required></td>
+            </tr>
+    </table>    
+    </form>
+    <input type="Submit" value="Submit" class="center" onclick="show()">
+    <br> <p id="cal"></p>    
+    <footer>
+        <br><hr>
+<center><h1 style="color:hsl(51, 100%, 50%)">Find is on social media </h1>
+    <p><a href="http://www.instagram.com/krishagrawal_30/"><img src="instagram.png" alt="error" height="100"
+    width="100"></a>
+    <a href="http://wa.me/918956369613"><img src="whats.png" alt="error" height="100" width="100"></a>
+    <a href="http://twitter.com/KrishAg2006"><img src="twit.png" alt="error" height="100"
+    width="100"></a></p>
+    <h3>{For Contact Details click on the above icons} </h3><br>
+</center>
+<br>
+
+    </footer>
+</div>
+</body>
+</html>
